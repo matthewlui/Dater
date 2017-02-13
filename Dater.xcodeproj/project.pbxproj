@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		34480A261E51A4980068A97B /* Dater.h in Headers */ = {isa = PBXBuildFile; fileRef = 34480A241E51A4980068A97B /* Dater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34480A2D1E51A4DC0068A97B /* IteratorDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34480A2C1E51A4DC0068A97B /* IteratorDay.swift */; };
+		34480A2F1E51A4F80068A97B /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34480A2E1E51A4F80068A97B /* Weekday.swift */; };
+		34480A311E51A5150068A97B /* WeekIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34480A301E51A5150068A97B /* WeekIterator.swift */; };
+		34480A351E51A5B40068A97B /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34480A341E51A5B40068A97B /* Month.swift */; };
+		34480A371E51A5CA0068A97B /* MonthIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34480A361E51A5CA0068A97B /* MonthIterator.swift */; };
+		34480A391E51B1060068A97B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 34480A381E51B1060068A97B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34480A211E51A4980068A97B /* Dater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34480A241E51A4980068A97B /* Dater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dater.h; sourceTree = "<group>"; };
 		34480A251E51A4980068A97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34480A2C1E51A4DC0068A97B /* IteratorDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IteratorDay.swift; sourceTree = "<group>"; };
+		34480A2E1E51A4F80068A97B /* Weekday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		34480A301E51A5150068A97B /* WeekIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekIterator.swift; sourceTree = "<group>"; };
+		34480A341E51A5B40068A97B /* Month.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		34480A361E51A5CA0068A97B /* MonthIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthIterator.swift; sourceTree = "<group>"; };
+		34480A381E51B1060068A97B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,7 @@
 		34480A171E51A4980068A97B = {
 			isa = PBXGroup;
 			children = (
+				34480A381E51B1060068A97B /* README.md */,
 				34480A231E51A4980068A97B /* Dater */,
 				34480A221E51A4980068A97B /* Products */,
 			);
@@ -47,9 +60,30 @@
 			isa = PBXGroup;
 			children = (
 				34480A241E51A4980068A97B /* Dater.h */,
+				34480A2C1E51A4DC0068A97B /* IteratorDay.swift */,
+				34480A321E51A5910068A97B /* Weeday */,
+				34480A331E51A59C0068A97B /* Month */,
 				34480A251E51A4980068A97B /* Info.plist */,
 			);
 			path = Dater;
+			sourceTree = "<group>";
+		};
+		34480A321E51A5910068A97B /* Weeday */ = {
+			isa = PBXGroup;
+			children = (
+				34480A2E1E51A4F80068A97B /* Weekday.swift */,
+				34480A301E51A5150068A97B /* WeekIterator.swift */,
+			);
+			name = Weeday;
+			sourceTree = "<group>";
+		};
+		34480A331E51A59C0068A97B /* Month */ = {
+			isa = PBXGroup;
+			children = (
+				34480A341E51A5B40068A97B /* Month.swift */,
+				34480A361E51A5CA0068A97B /* MonthIterator.swift */,
+			);
+			name = Month;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +129,7 @@
 				TargetAttributes = {
 					34480A201E51A4980068A97B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34480A391E51B1060068A97B /* README.md in Sources */,
+				34480A371E51A5CA0068A97B /* MonthIterator.swift in Sources */,
+				34480A351E51A5B40068A97B /* Month.swift in Sources */,
+				34480A2F1E51A4F80068A97B /* Weekday.swift in Sources */,
+				34480A311E51A5150068A97B /* WeekIterator.swift in Sources */,
+				34480A2D1E51A4DC0068A97B /* IteratorDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +280,7 @@
 		34480A2A1E51A4980068A97B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goldunderknees.Dater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +300,7 @@
 		34480A2B1E51A4980068A97B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +335,7 @@
 				34480A2B1E51A4980068A97B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
